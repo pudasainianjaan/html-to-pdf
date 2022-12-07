@@ -59,6 +59,16 @@
       .aloneDiv {
         min-width: 100%;
       }
+
+      .image-cheque {
+        width: 50%;
+        margin-right: 20px;
+      }
+
+      .image-permit {
+        width: 50%;
+        margin-right: 0;
+      }
     </style>
   </head>
 
@@ -179,19 +189,40 @@
       <div class="contact information-row">
         <div class="information-heading">Primary Contact’s Information</div>
         <div class="information-detail-wrapper full-width">
-          <div class="aloneDiv">
+          <div class="d-flex full-width">
             <div class="each-info">
               <div class="detail-heading">Name</div>
               <div class="detail-value">John Doe</div>
               <br />
             </div>
-          </div>
 
-          <div class="aloneDiv">
             <div class="each-info">
               <div class="detail-heading">Phone Number</div>
               <div class="detail-value">(983) 056-7665</div>
               <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="page-break-before: always">&nbsp;</div>
+
+      <div class="contact information-row">
+        <div class="information-heading">Documents</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="d-flex full-width">
+            <div class="each-info image-cheque">
+              <img
+                src="https://miro.medium.com/max/1200/0*0X8Z8EXF0mXUSLvB.jpg"
+                style="width: 100%; height: auto"
+              />
+            </div>
+
+            <div class="each-info image-permit">
+              <img
+                src="https://s2.studylib.net/store/data/018669590_1-c215e17f4ae3ecc190ae0d198d703e1c-768x994.png"
+                style="width: 100%; height: auto"
+              />
             </div>
           </div>
         </div>
