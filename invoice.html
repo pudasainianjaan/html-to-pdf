@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML information design</title>
+
+    <style>
+      .d-flex {
+        display: flex;
+      }
+
+      .full-width {
+        width: 100%;
+      }
+
+      .info-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        color: #555;
+      }
+
+      .information-heading {
+        color: #000000;
+        border-bottom: 1px solid rgba(77, 77, 77, 0.4);
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 16px;
+      }
+
+      .information-detail-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      .each-info {
+        font-size: 14px;
+        margin-right: 8rem;
+        min-width: 40%;
+      }
+
+      .detail-heading {
+        color: #4d4d4d;
+        font-weight: 400;
+        opacity: 0.6;
+      }
+
+      .detail-value {
+        font-weight: 500;
+        color: #111111;
+      }
+
+      .aloneDiv {
+        min-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="info-box">
+      <div class="information-row">
+        <div class="information-heading">Hiring Information</div>
+        <div class="information-detail-wrapper">
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Position</div>
+              <div class="detail-value">Assistant Store Manager</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Hiring Date</div>
+              <div class="detail-value">17 Oct 2022</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Status</div>
+              <div class="detail-value">Part Time (25 hours/week)</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Wage</div>
+              <div class="detail-value">$12</div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="candidate information-row">
+        <div class="information-heading">Candidate’s Information</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="aloneDiv">
+            <div class="each-info">
+              <div class="detail-heading">Name</div>
+              <div class="detail-value">John Doe</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Gender</div>
+              <div class="detail-value">Male</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Date of Birth</div>
+              <div class="detail-value">19 Sep 1968</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="aloneDiv">
+            <div class="each-info">
+              <div class="detail-heading">Correspondence Language</div>
+              <div class="detail-value">English</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Phone Number</div>
+              <div class="detail-value">(983) 056-7665</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Optional Phone Number</div>
+              <div class="detail-value">N/A</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="aloneDiv">
+            <div class="each-info">
+              <div class="detail-heading">Social Insurance Number</div>
+              <div class="detail-value">(172) 599-987</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="aloneDiv">
+            <div class="each-info">
+              <div class="detail-heading">Address</div>
+              <div class="detail-value">92728 Harold Street, Montreal, QC</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Postal Code</div>
+              <div class="detail-value">H4A7J7</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Apartment</div>
+              <div class="detail-value">5</div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact information-row">
+        <div class="information-heading">Primary Contact’s Information</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="aloneDiv">
+            <div class="each-info">
+              <div class="detail-heading">Name</div>
+              <div class="detail-value">John Doe</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="aloneDiv">
+            <div class="each-info">
+              <div class="detail-heading">Phone Number</div>
+              <div class="detail-value">(983) 056-7665</div>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
