@@ -5,18 +5,26 @@
     <title>HTML information design</title>
 
     <style>
+      @page {
+        size: A4;
+        margin: 30px;
+      }
+
       .d-flex {
         display: flex;
+        justify-content: space-between;
       }
 
       .full-width {
         width: 100%;
       }
 
-      .info-box {
+      body {
         max-width: 800px;
+      }
+
+      .info-box {
         margin: auto;
-        padding: 30px;
         font-size: 16px;
         line-height: 24px;
         font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -29,6 +37,12 @@
         font-weight: 600;
         font-size: 18px;
         margin-bottom: 16px;
+      }
+
+      .font-dim {
+        font-weight: 400;
+        color: #4d4d4d;
+        font-size: 15px;
       }
 
       .information-detail-wrapper {
@@ -60,14 +74,16 @@
         min-width: 100%;
       }
 
-      .image-cheque {
-        width: 50%;
-        margin-right: 20px;
+      .image-cheque,
+      .image-signature,
+      .image-permit {
+        width: auto;
+        height: auto;
       }
 
-      .image-permit {
-        width: 50%;
-        margin-right: 0;
+      .iAgreeText,
+      .work-permit {
+        margin-top: 15px;
       }
     </style>
   </head>
@@ -75,8 +91,28 @@
   <body>
     <div class="info-box">
       <div class="information-row">
-        <div class="information-heading">Hiring Information</div>
+        <div class="information-heading d-flex">
+          <div>Hiring Information : <span class="font-dim">New Hire</span></div>
+          <div>
+            Submitted at :
+            <span class="font-dim"> Friday, December 16, 2022</span>
+          </div>
+        </div>
         <div class="information-detail-wrapper">
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Business Location</div>
+              <div class="detail-value">full business location here</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Store Number</div>
+              <div class="detail-value">store number here</div>
+              <br />
+            </div>
+          </div>
+
           <div class="d-flex full-width">
             <div class="each-info">
               <div class="detail-heading">Position</div>
@@ -207,23 +243,66 @@
 
       <div style="page-break-before: always">&nbsp;</div>
 
-      <div class="contact information-row">
-        <div class="information-heading">Documents</div>
+      <div class="cheque information-row">
+        <div class="information-heading">Cheque</div>
         <div class="information-detail-wrapper full-width">
           <div class="d-flex full-width">
             <div class="each-info image-cheque">
               <img
                 src="https://miro.medium.com/max/1200/0*0X8Z8EXF0mXUSLvB.jpg"
-                style="width: 100%; height: auto"
+                style="width: 100%; height: 100%"
               />
             </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="work-permit information-row">
+        <div class="information-heading">Work Permit</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="d-flex full-width">
             <div class="each-info image-permit">
               <img
                 src="https://s2.studylib.net/store/data/018669590_1-c215e17f4ae3ecc190ae0d198d703e1c-768x994.png"
-                style="width: 100%; height: auto"
+                style="width: 100%; height: 100%"
               />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="page-break-before: always">&nbsp;</div>
+
+      <div class="signature information-row">
+        <div class="information-heading">Signature</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="d-flex full-width">
+            <div class="each-info image-signature">
+              <img
+                src="https://miro.medium.com/max/1200/0*0X8Z8EXF0mXUSLvB.jpg"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="iAgreeText information-row">
+        <div class="information-heading">Agreement</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="d-flex full-width">
+            <span
+              >This contract confirms that you have been hired for a fix term.
+              Your employment will come into effect as of 20 Dec 2020 and will
+              end on 3 Sep 2021 and may end sooner based on performance or needs
+              of the business. You will be scheduled in accordance with the
+              needs of the business and in line with the availability
+              information you provided. Work schedules are posted by the end of
+              day each Wednesday. It is your responsibility to check that
+              schedule each week and we expect that you will ensure you are
+              available for your scheduled shifts. You are not eligible for any
+              vacation time during this contract.</span
+            >
           </div>
         </div>
       </div>
