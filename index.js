@@ -1,3 +1,4 @@
+const bothHtmlAndPdfFileName = "newHire";
 const fs = require("fs");
 const path = require("path");
 const utils = require("util");
@@ -7,7 +8,7 @@ const readFile = utils.promisify(fs.readFile);
 async function getTemplateHtml() {
   console.log("Loading template file in memory");
   try {
-    const invoicePath = path.resolve("./invoice.html");
+    const invoicePath = path.resolve(`./${bothHtmlAndPdfFileName}.html`);
     return await readFile(invoicePath, "utf8");
   } catch (err) {
     return Promise.reject("Could not load html template");
@@ -32,7 +33,7 @@ async function generatePdf() {
       // We set the page content as the generated html by handlebars
       await page.setContent(html);
       // We use pdf function to generate the pdf in the same folder as this file.
-      await page.pdf({ path: "information.pdf", format: "A4" });
+      await page.pdf({ path: `${bothHtmlAndPdfFileName}.pdf`, format: "A4" });
       await browser.close();
       console.log("PDF Generated");
     })
