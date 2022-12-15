@@ -1,4 +1,4 @@
-const bothHtmlAndPdfFileName = "newHire";
+const bothHtmlAndPdfFileName = "workPermit";
 const fs = require("fs");
 const path = require("path");
 const utils = require("util");
