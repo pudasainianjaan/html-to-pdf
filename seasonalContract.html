@@ -45,6 +45,14 @@
         margin-bottom: 16px;
       }
 
+      .information-subheading {
+        color: #000000;
+        border-bottom: 1px solid rgba(77, 77, 77, 0.4);
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
       .font-dim {
         font-weight: 400;
         color: #4d4d4d;
@@ -97,6 +105,16 @@
 
       .boldText {
         font-weight: bold;
+      }
+
+      .identification.information-row {
+        margin-top: 30px;
+        page-break-before: auto;
+      }
+
+      .identification.information-row img {
+        max-height: 450px;
+        width: auto;
       }
     </style>
   </head>
@@ -185,29 +203,41 @@
       <div class="candidate information-row">
         <div class="information-heading">Candidate’s Information</div>
         <div class="information-detail-wrapper full-width">
-          <div class="aloneDiv">
+          <div class="d-flex full-width">
             <div class="each-info">
-              <div class="detail-heading">Name</div>
-              <div class="detail-value">John Doe</div>
+              <div class="detail-heading">First Name</div>
+              <div class="detail-value">Ram</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Last Name</div>
+              <div class="detail-value">Sharma</div>
               <br />
             </div>
           </div>
 
           <div class="d-flex full-width">
             <div class="each-info">
+              <div class="detail-heading">Nickname</div>
+              <div class="detail-value">RS</div>
+              <br />
+            </div>
+
+            <div class="each-info">
               <div class="detail-heading">Gender</div>
               <div class="detail-value">Male</div>
               <br />
             </div>
+          </div>
 
+          <div class="d-flex full-width">
             <div class="each-info">
               <div class="detail-heading">Date of Birth</div>
               <div class="detail-value">Sep 19, 1968</div>
               <br />
             </div>
-          </div>
 
-          <div class="aloneDiv">
             <div class="each-info">
               <div class="detail-heading">Correspondence Language</div>
               <div class="detail-value">English</div>
@@ -229,17 +259,28 @@
             </div>
           </div>
 
-          <div class="aloneDiv">
+          <div class="d-flex full-width">
             <div class="each-info">
               <div class="detail-heading">Social Insurance Number</div>
               <div class="detail-value">172 599 987</div>
               <br />
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="aloneDiv">
+      <div class="address information-row">
+        <div class="information-subheading">Address</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="d-flex full-width">
             <div class="each-info">
-              <div class="detail-heading">Address</div>
+              <div class="detail-heading">Address Line 1</div>
+              <div class="detail-value">92728 Harold Street, Montreal, QC</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Address Line 2</div>
               <div class="detail-value">92728 Harold Street, Montreal, QC</div>
               <br />
             </div>
@@ -247,32 +288,52 @@
 
           <div class="d-flex full-width">
             <div class="each-info">
-              <div class="detail-heading">Postal Code</div>
-              <div class="detail-value">H4A7J7</div>
+              <div class="detail-heading">City</div>
+              <div class="detail-value">Montreal</div>
               <br />
             </div>
 
             <div class="each-info">
-              <div class="detail-heading">Apartment</div>
-              <div class="detail-value">5</div>
+              <div class="detail-heading">State/Province</div>
+              <div class="detail-value">QC</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="d-flex full-width">
+            <div class="each-info">
+              <div class="detail-heading">Country</div>
+              <div class="detail-value">Canada</div>
+              <br />
+            </div>
+
+            <div class="each-info">
+              <div class="detail-heading">Postal Code</div>
+              <div class="detail-value">H4A7J7</div>
               <br />
             </div>
           </div>
         </div>
       </div>
 
-      <div style="page-break-before: always">&nbsp;</div>
-
       <div class="contact information-row">
         <div class="information-heading">Primary Contact’s Information</div>
         <div class="information-detail-wrapper full-width">
           <div class="d-flex full-width">
             <div class="each-info">
-              <div class="detail-heading">Name</div>
-              <div class="detail-value">John Doe</div>
+              <div class="detail-heading">First Name</div>
+              <div class="detail-value">Ram</div>
               <br />
             </div>
 
+            <div class="each-info">
+              <div class="detail-heading">Last Name</div>
+              <div class="detail-value">Sharma</div>
+              <br />
+            </div>
+          </div>
+
+          <div class="aloneDiv">
             <div class="each-info">
               <div class="detail-heading">Phone Number</div>
               <div class="detail-value">(983) 056-7665</div>
@@ -289,6 +350,20 @@
             <div class="each-info image-cheque">
               <img
                 src="https://miro.medium.com/max/1200/0*0X8Z8EXF0mXUSLvB.jpg"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="identification information-row">
+        <div class="information-heading">Identification Document</div>
+        <div class="information-detail-wrapper full-width">
+          <div class="d-flex full-width">
+            <div class="each-info image-identification">
+              <img
+                src="https://miro.medium.com/max/1024/1*Qg9KBPDUI_c0XGKLPTX9bw.jpeg"
                 style="width: 100%; height: 100%"
               />
             </div>
